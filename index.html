@@ -4,45 +4,36 @@
   <title>NRの学習日記(How to NR learn diary)</title> <!-- タイトルはブラウザや検索結果に表示 -->
   <meta charset="UTF-8"> <!-- 日本語コンテンツの文字化け防止 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--描画幅をデバイスの描画幅に合わせる。現代ではほぼ必須-->
+  
+  <link rel="stylesheet" href="styles.css"> <!-- CSSファイル -->
+  <script src="script.js" defer></script> <!-- JSファイル -->
 </head>
   
 <body> <!-- ページの主要コンテンツを記述 -->
   <header> <!--ヘッダー情報としてタイトルやナビゲーションなどを含むことが一般的です。Headerを使う事で、検索エンジンがタイトル部分を主要部分として捉え、SEO対策に有利であり、構造化されたサイトに有利-->
   <h1>NRの学習日記(How to NR learn diary)</h1> <!-- タイトルとして表示 -->
-  <nav>
-    <ul>
-      <li><a href="#HOME">ホーム</a></li> <!--href = Hypertext Reference-->
-      <li><a href="#About">学習日記について</a></li>
-      <li><a href="#Contact">コンタクト</a></li>
-    </ul>
-  </nav>
+<nav class="main-navigation">
+  <ul class="nav-list">
+    <li class="nav-item"><a href="#HOME" class="nav-link">ホーム</a></li>
+    <li class="nav-item"><a href="#About" class="nav-link">学習日記について</a></li>
+    <li class="nav-item"><a href="#Contact" class="nav-link">コンタクト</a></li>
+  </ul>
+</nav>
+
   </header>
   <main> <!-- メインコンテンツ部分 -->
     <p>ここにメインコンテンツを記載します。</p>
   </main>
 
-<Footer>
-  
-  <thead>
-    <tr>
-      <th>名前</th>
-      <th>役職</th>
-      <th>連絡先</th>
-    </tr>
-  </thead>
-    <tbody>
-      <tr>
-        <td>山田 太郎</td>
-        <td>CEO</td>
-        <td>yamada@example.com</td>
-      </tr>
-      <tr>
-        <td>佐藤 花子</td>
-        <td>CTO</td>
-        <td>sato@example.com</td>
-      </tr>
-    </tbody>
-  
-</Footer>
+<footer>
+  <div class="footer-container">
+    <div class="footer-item">
+      <div>名前: 中茂 竜太</div>
+      <div>役職: フリー</div>
+      <div>連絡先: real.aka.lyca@gmail.com</div> 
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>　<!--HyperTextMarkupLanguageマークアップ言語と呼ばれている所、HTMLで記載されている事が明示されている-->
